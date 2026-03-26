@@ -1,8 +1,8 @@
-# Tasknator
+# Recovra.ai
 
 **AI-powered business diagnostic & recovery platform for SMBs and agencies.**
 
-Tasknator scans websites, SEO, social presence, reviews, and offers — then delivers a prioritized repair plan with ready-to-use marketing assets. Think of it as a business doctor: diagnose, prescribe, and fix.
+Recovra.ai scans websites, SEO, social presence, reviews, and offers — then delivers a prioritized repair plan with ready-to-use marketing assets. Think of it as a business doctor: diagnose, prescribe, and fix.
 
 ## Features
 

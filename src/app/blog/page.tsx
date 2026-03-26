@@ -6,7 +6,7 @@ import { getSiteBranding } from "@/lib/branding";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Blog — Tasknator",
+  title: "Blog — Recovra.ai",
   description: "Tips, guides, and case studies on fixing your business with AI.",
 };
 
@@ -24,7 +24,7 @@ export default async function BlogPage() {
           <div className="flex items-center justify-between h-16">
             <Link href="/" className="flex items-center gap-2">
               {branding.logoUrl ? (
-                <img src={branding.logoUrl} alt={branding.siteName} className="h-8 max-w-[180px] object-contain" />
+                <img src={branding.logoUrl} alt={branding.siteName} className="h-16 max-w-[220px] object-contain" />
               ) : (
                 <>
                   <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-violet-600 flex items-center justify-center">
@@ -118,7 +118,7 @@ export default async function BlogPage() {
               <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-600 to-violet-600 flex items-center justify-center">
                 <Zap className="w-4 h-4 text-white" />
               </div>
-              <span className="font-bold text-gray-900">Tasknator</span>
+              <span className="font-bold text-gray-900">Recovra.ai</span>
             </div>
             <div className="flex items-center gap-6 text-sm text-gray-500">
               <Link href="/blog" className="hover:text-gray-900 transition-colors">Blog</Link>

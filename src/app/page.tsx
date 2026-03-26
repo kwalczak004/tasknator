@@ -83,13 +83,13 @@ const TESTIMONIALS = [
   {
     name: "Sarah Chen",
     role: "Owner, Bloom Studio",
-    quote: "Tasknator found 14 critical issues I had no idea about. After fixing them, my online orders went up 180% in just 6 weeks. It paid for itself on day one.",
+    quote: "Recovra.ai found 14 critical issues I had no idea about. After fixing them, my online orders went up 180% in just 6 weeks. It paid for itself on day one.",
     rating: 5,
   },
   {
     name: "Marcus Johnson",
     role: "CEO, TechFix Pro",
-    quote: "We were spending $3K/month on a marketing agency that couldn't tell us what was actually wrong. Tasknator diagnosed everything in 3 minutes for $29/month.",
+    quote: "We were spending $3K/month on a marketing agency that couldn't tell us what was actually wrong. Recovra.ai diagnosed everything in 3 minutes for $29/month.",
     rating: 5,
   },
   {
@@ -120,8 +120,8 @@ const TESTIMONIALS = [
 
 const FAQ_ITEMS = [
   {
-    q: "What is Tasknator?",
-    a: "Tasknator is an AI-powered platform that diagnoses what's wrong with your business's online presence (website, SEO, social, offers, reputation) and generates a complete recovery plan with ready-to-use marketing assets.",
+    q: "What is Recovra.ai?",
+    a: "Recovra.ai is an AI-powered platform that diagnoses what's wrong with your business's online presence (website, SEO, social, offers, reputation) and generates a complete recovery plan with ready-to-use marketing assets.",
   },
   {
     q: "How does the AI audit work?",
@@ -137,15 +137,15 @@ const FAQ_ITEMS = [
   },
   {
     q: "What kind of businesses is this for?",
-    a: "Tasknator works for any business with an online presence — restaurants, salons, fitness studios, agencies, SaaS companies, e-commerce stores, professional services, and more. If you have a website and want more customers, it's for you.",
+    a: "Recovra.ai works for any business with an online presence — restaurants, salons, fitness studios, agencies, SaaS companies, e-commerce stores, professional services, and more. If you have a website and want more customers, it's for you.",
   },
   {
-    q: "Can I use Tasknator for my clients?",
-    a: "Absolutely! Our Agency plan ($79/month) supports up to 25 business profiles and 100 audits/month with white-label exports and team access. Many marketing agencies use Tasknator to onboard and diagnose clients.",
+    q: "Can I use Recovra.ai for my clients?",
+    a: "Absolutely! Our Agency plan ($79/month) supports up to 25 business profiles and 100 audits/month with white-label exports and team access. Many marketing agencies use Recovra.ai to onboard and diagnose clients.",
   },
   {
-    q: "What assets does Tasknator generate?",
-    a: "Depending on your audit findings, Tasknator can generate: website copy, ad scripts (Meta & Google), email sequences, SMS sequences, review reply templates, SEO plans, sales scripts, offer packages, FAQs, win-back messages, and cost checklists.",
+    q: "What assets does Recovra.ai generate?",
+    a: "Depending on your audit findings, Recovra.ai can generate: website copy, ad scripts (Meta & Google), email sequences, SMS sequences, review reply templates, SEO plans, sales scripts, offer packages, FAQs, win-back messages, and cost checklists.",
   },
   {
     q: "Can I cancel anytime?",
@@ -169,16 +169,7 @@ export default async function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-2">
-              {branding.logoUrl ? (
-                <img src={branding.logoUrl} alt={branding.siteName} className="h-8 max-w-[180px] object-contain" />
-              ) : (
-                <>
-                  <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-violet-600 flex items-center justify-center">
-                    <Zap className="w-5 h-5 text-white" />
-                  </div>
-                  <span className="text-xl font-bold text-gray-900">{branding.siteName}</span>
-                </>
-              )}
+              <img src="/logo.png" alt={branding.siteName} className="h-16 max-w-[220px] object-contain" />
             </div>
             <div className="hidden md:flex items-center gap-8">
               <a href="#features" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Features</a>
@@ -226,7 +217,7 @@ export default async function HomePage() {
             </h1>
 
             <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto mb-10 animate-slide-up" style={{ animationDelay: "0.1s" }}>
-              Tasknator diagnoses why your business isn&apos;t performing and generates a complete recovery plan with ready-to-use marketing assets — in minutes, not months.
+              Recovra.ai diagnoses why your business isn&apos;t performing and generates a complete recovery plan with ready-to-use marketing assets — in minutes, not months.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up" style={{ animationDelay: "0.2s" }}>
@@ -269,7 +260,7 @@ export default async function HomePage() {
                   <div className="w-3 h-3 rounded-full bg-yellow-400" />
                   <div className="w-3 h-3 rounded-full bg-green-400" />
                 </div>
-                <div className="flex-1 text-center text-xs text-gray-400">app.tasknator.com/dashboard</div>
+                <div className="flex-1 text-center text-xs text-gray-400">app.recovra.ai/dashboard</div>
               </div>
               <div className="bg-gradient-to-br from-gray-50 to-blue-50/30 p-8 min-h-[400px]">
                 <div className="grid grid-cols-12 gap-4">
@@ -394,7 +385,7 @@ export default async function HomePage() {
               Real businesses, <span className="text-gradient">real results</span>
             </h2>
             <p className="text-gray-600 text-lg">
-              See what business owners are saying about Tasknator.
+              See what business owners are saying about Recovra.ai.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -567,7 +558,7 @@ export default async function HomePage() {
             <span className="text-gradient">Start fixing.</span>
           </h2>
           <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
-            Join thousands of business owners who used Tasknator to identify what&apos;s broken and get back on track.
+            Join thousands of business owners who used Recovra.ai to identify what&apos;s broken and get back on track.
           </p>
           <Link
             href="/register"
@@ -583,8 +574,8 @@ export default async function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
-              {branding.logoUrl ? (
-                <img src={branding.logoUrl} alt={branding.siteName} className="h-7 max-w-[150px] object-contain" />
+              {true ? (
+                <img src="/logo.png" alt={branding.siteName} className="h-16 max-w-[220px] object-contain" />
               ) : (
                 <>
                   <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-600 to-violet-600 flex items-center justify-center">

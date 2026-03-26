@@ -12,7 +12,7 @@ export async function register() {
         const { db } = await import("./lib/db");
         const bcrypt = await import("bcryptjs");
 
-        const adminEmail = process.env.ADMIN_EMAIL || "admin@tasknator.com";
+        const adminEmail = process.env.ADMIN_EMAIL || "admin@recovra.ai";
         const adminPass = process.env.ADMIN_PASSWORD;
         if (adminPass) {
           const adminExists = await db.user.findUnique({ where: { email: adminEmail } });
@@ -48,7 +48,7 @@ export async function register() {
               excerpt: "Most small businesses make the same critical mistakes online. Here's what our data reveals.",
               content: "## The Silent Killer of Small Businesses\n\nEvery year, thousands of small businesses invest in websites, social media, and digital marketing — only to see little to no return.\n\n### 1. No Clear Call-to-Action\n\n**68% of small business websites** lack a clear, compelling call-to-action above the fold.\n\n### 2. Missing Meta Descriptions\n\n**54% of audited businesses** have incomplete or missing meta descriptions.\n\n### 3. No Google Business Profile\n\n**41% of local businesses** either don't have a Google Business Profile or haven't optimized it.\n\n**Ready to find out what's broken?** [Start your free audit today](/register).",
               category: "Business Tips",
-              authorName: "Tasknator Team",
+              authorName: "Recovra.ai Team",
               published: true,
               publishedAt: new Date("2026-01-15"),
             },
@@ -58,7 +58,7 @@ export async function register() {
               excerpt: "An AI business audit uses machine learning to diagnose problems across your website, SEO, social media, and offers.",
               content: "## What Is an AI Business Audit?\n\nAn AI business audit is an automated diagnostic process that analyzes your business's digital presence across multiple dimensions.\n\n### How It Works\n\n1. **Data Collection** — You provide your business details and website URL\n2. **AI Analysis** — Our models analyze every aspect of your digital presence\n3. **Scoring** — You receive scores across 6 categories\n4. **Findings** — Specific issues are identified with severity ratings\n5. **Repair Plan** — A prioritized action plan is generated automatically\n\n[Try it free](/register).",
               category: "Product",
-              authorName: "Tasknator Team",
+              authorName: "Recovra.ai Team",
               published: true,
               publishedAt: new Date("2026-01-22"),
             },
@@ -68,7 +68,7 @@ export async function register() {
               excerpt: "These common marketing mistakes silently drain your budget. Learn how to identify and fix them.",
               content: "## Marketing Mistakes That Kill Revenue\n\n### Mistake #1: Targeting Everyone\nWhen you try to appeal to everyone, you appeal to no one.\n\n### Mistake #2: No Email List\nSocial media followers aren't yours — they're rented.\n\n### Mistake #3: Ignoring Reviews\nIgnoring reviews signals to potential customers that you don't care.\n\n### Mistake #4: No Follow-Up System\n80% of sales require 5+ touchpoints.\n\n### Mistake #5: Copying Competitors\nYour competitors might be making the same mistakes.\n\n[Run your free audit](/register).",
               category: "Marketing",
-              authorName: "Tasknator Team",
+              authorName: "Recovra.ai Team",
               published: true,
               publishedAt: new Date("2026-02-01"),
             },

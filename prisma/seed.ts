@@ -9,11 +9,11 @@ async function main() {
   // --- Demo User (Pro plan) ---
   const demoHash = await bcrypt.hash("demo1234", 12);
   const demo = await db.user.upsert({
-    where: { email: "demo@tasknator.com" },
+    where: { email: "demo@recovra.ai" },
     update: { passwordHash: demoHash },
     create: {
       name: "Demo User",
-      email: "demo@tasknator.com",
+      email: "demo@recovra.ai",
       passwordHash: demoHash,
       isAdmin: false,
     },
@@ -889,11 +889,11 @@ You've been part of the Acme family for a few weeks now, and we'd love to hear h
   // --- Admin User ---
   const adminHash = await bcrypt.hash("admin1234", 12);
   const admin = await db.user.upsert({
-    where: { email: "admin@tasknator.com" },
+    where: { email: "admin@recovra.ai" },
     update: { passwordHash: adminHash, isAdmin: true },
     create: {
       name: "Super Admin",
-      email: "admin@tasknator.com",
+      email: "admin@recovra.ai",
       passwordHash: adminHash,
       isAdmin: true,
     },
@@ -949,7 +949,7 @@ You've been part of the Acme family for a few weeks now, and we'd love to hear h
       excerpt: "Most small businesses make the same critical mistakes with their online presence. Here's what our data from 10,000+ audits reveals.",
       content: `## The Silent Killer of Small Businesses
 
-Every year, thousands of small businesses invest in websites, social media, and digital marketing — only to see little to no return. After analyzing over 10,000 businesses through Tasknator's AI audit system, we've identified the top reasons why.
+Every year, thousands of small businesses invest in websites, social media, and digital marketing — only to see little to no return. After analyzing over 10,000 businesses through Recovra.ai's AI audit system, we've identified the top reasons why.
 
 ### 1. No Clear Call-to-Action
 
@@ -977,15 +977,15 @@ Having accounts on every platform but posting once a month is worse than not bei
 
 **82% of consumers** read online reviews before visiting a business. Yet most businesses leave their reputation to chance.
 
-**The Fix:** Implement a systematic review-request process. Tasknator's Reputation Fixer module can generate review-request campaigns automatically.
+**The Fix:** Implement a systematic review-request process. Recovra.ai's Reputation Fixer module can generate review-request campaigns automatically.
 
 ## The AI Advantage
 
-What used to take a marketing agency weeks to diagnose, AI can now do in minutes. Tasknator's AI audit scans your entire digital presence and gives you a prioritized repair plan — so you fix what matters most, first.
+What used to take a marketing agency weeks to diagnose, AI can now do in minutes. Recovra.ai's AI audit scans your entire digital presence and gives you a prioritized repair plan — so you fix what matters most, first.
 
 **Ready to find out what's broken?** [Start your free audit today](/register).`,
       category: "Business Tips",
-      authorName: "Tasknator Team",
+      authorName: "Recovra.ai Team",
       published: true,
       publishedAt: new Date("2026-01-15"),
     },
@@ -997,7 +997,7 @@ What used to take a marketing agency weeks to diagnose, AI can now do in minutes
 
 An AI business audit is an automated diagnostic process that analyzes your business's digital presence across multiple dimensions: website quality, SEO performance, social media presence, offer structure, and online reputation.
 
-### How Tasknator's AI Audit Works
+### How Recovra.ai's AI Audit Works
 
 1. **Data Collection** — You provide your business details, website URL, and social profiles
 2. **AI Analysis** — Our models (powered by Claude, GPT-4, and Gemini) analyze every aspect of your digital presence
@@ -1046,13 +1046,13 @@ An AI business audit is an automated diagnostic process that analyzes your busin
 
 ### How Much Does It Cost?
 
-Tasknator plans start at $9/month for 1 audit. Pro users get 10 audits/month, and agencies get 100. [See pricing](/pricing).
+Recovra.ai plans start at $9/month for 1 audit. Pro users get 10 audits/month, and agencies get 100. [See pricing](/pricing).
 
 ## Get Started
 
 Your first audit takes less than 3 minutes to set up. [Try it free](/register).`,
       category: "Product",
-      authorName: "Tasknator Team",
+      authorName: "Recovra.ai Team",
       published: true,
       publishedAt: new Date("2026-01-22"),
     },
@@ -1086,7 +1086,7 @@ Negative reviews happen to every business. What matters is how you respond. Igno
 
 80% of sales require 5+ touchpoints, yet most businesses give up after 1-2. Without a follow-up system, you're leaving money on the table.
 
-**Action item:** Set up an automated email sequence for new leads. Tasknator can generate these sequences for you based on your business type.
+**Action item:** Set up an automated email sequence for new leads. Recovra.ai can generate these sequences for you based on your business type.
 
 ### Mistake #5: Copying Competitors
 
@@ -1096,16 +1096,16 @@ Your competitors might be making the same mistakes you are. Instead of copying, 
 
 ## Want a Full Diagnosis?
 
-Tasknator's AI audit checks for all of these mistakes and 50+ more. [Run your free audit](/register) and get a personalized repair plan in minutes.`,
+Recovra.ai's AI audit checks for all of these mistakes and 50+ more. [Run your free audit](/register) and get a personalized repair plan in minutes.`,
       category: "Marketing",
-      authorName: "Tasknator Team",
+      authorName: "Recovra.ai Team",
       published: true,
       publishedAt: new Date("2026-02-01"),
     },
     {
       slug: "repair-plan-case-study-bakery",
       title: "Case Study: How a Local Bakery Increased Revenue 2.3x in 90 Days",
-      excerpt: "See how Sweet Crumbs Bakery used Tasknator's AI repair plan to transform their online presence and more than double their monthly revenue.",
+      excerpt: "See how Sweet Crumbs Bakery used Recovra.ai's AI repair plan to transform their online presence and more than double their monthly revenue.",
       content: `## The Challenge
 
 Sweet Crumbs Bakery in Portland, OR had been in business for 5 years. Despite great products and loyal walk-in customers, their online orders were almost non-existent, and foot traffic was declining.
@@ -1161,11 +1161,11 @@ Sweet Crumbs Bakery in Portland, OR had been in business for 5 years. Despite gr
 
 ## Key Takeaway
 
-The bakery didn't need a complete business overhaul — they needed to fix the right things in the right order. That's exactly what Tasknator's AI repair plan does: it prioritizes by impact so you see results fast.
+The bakery didn't need a complete business overhaul — they needed to fix the right things in the right order. That's exactly what Recovra.ai's AI repair plan does: it prioritizes by impact so you see results fast.
 
 **Want similar results?** [Start your free audit today](/register).`,
       category: "Case Studies",
-      authorName: "Tasknator Team",
+      authorName: "Recovra.ai Team",
       published: true,
       publishedAt: new Date("2026-02-08"),
     },
@@ -1180,9 +1180,9 @@ The bakery didn't need a complete business overhaul — they needed to fix the r
   }
 
   console.log("Seed complete!");
-  console.log("  Demo account: demo@tasknator.com / demo1234 (Pro plan)");
-  console.log("  Agency demo:  admin@tasknator.com / admin1234 (Agency + white-label)");
-  console.log("  Admin panel:  admin@tasknator.com / admin1234 (Super Admin)");
+  console.log("  Demo account: demo@recovra.ai / demo1234 (Pro plan)");
+  console.log("  Agency demo:  admin@recovra.ai / admin1234 (Agency + white-label)");
+  console.log("  Admin panel:  admin@recovra.ai / admin1234 (Super Admin)");
   console.log("  Demo data: 1 audit (14 findings), 1 plan (12 tasks), 6 assets (incl. Sales Doctor)");
   console.log(`  Blog posts: ${posts.length} articles`);
 }

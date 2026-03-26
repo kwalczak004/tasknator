@@ -37,15 +37,15 @@ export async function GET(req: NextRequest) {
     for (const c of configs) data[c.key] = c.value;
 
     return NextResponse.json({
-      siteName: data["SITE_NAME"] || "Tasknator",
-      logoUrl: data["SITE_LOGO_URL"] || "",
+      siteName: data["SITE_NAME"] || "Recovra.ai",
+      logoUrl: data["SITE_LOGO_URL"] || "/logo1.png",
       tagline: data["SITE_TAGLINE"] || "AI that fixes business bottlenecks",
       whiteLabel: false,
     });
   } catch {
     return NextResponse.json({
-      siteName: "Tasknator",
-      logoUrl: "",
+      siteName: "Recovra.ai",
+      logoUrl: "/logo1.png",
       tagline: "AI that fixes business bottlenecks",
       whiteLabel: false,
     });

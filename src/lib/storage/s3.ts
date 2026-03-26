@@ -11,7 +11,7 @@ const s3 = new S3Client({
   forcePathStyle: true,
 });
 
-const BUCKET = process.env.S3_BUCKET || "tasknator-exports";
+const BUCKET = process.env.S3_BUCKET || "recovra-exports";
 
 export async function uploadFile(
   key: string,

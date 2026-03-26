@@ -126,16 +126,16 @@ export async function PUT(req: NextRequest) {
     });
 
     await transporter.sendMail({
-      from: getVal("EMAIL_FROM") || "Tasknator <noreply@tasknator.com>",
+      from: getVal("EMAIL_FROM") || "Recovra.ai <noreply@recovra.ai>",
       to,
-      subject: "Tasknator — Test Email",
+      subject: "Recovra.ai — Test Email",
       html: `
         <div style="font-family: sans-serif; max-width: 480px; margin: 0 auto; padding: 32px;">
-          <h1 style="color: #4f46e5; font-size: 24px;">Tasknator</h1>
-          <p style="color: #374151;">This is a test email from your Tasknator platform.</p>
+          <h1 style="color: #4f46e5; font-size: 24px;">Recovra.ai</h1>
+          <p style="color: #374151;">This is a test email from your Recovra.ai platform.</p>
           <p style="color: #374151;">If you received this, your SMTP configuration is working correctly!</p>
           <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 24px 0;" />
-          <p style="color: #9ca3af; font-size: 12px;">Sent from Tasknator Admin Panel</p>
+          <p style="color: #9ca3af; font-size: 12px;">Sent from Recovra.ai Admin Panel</p>
         </div>
       `,
     });

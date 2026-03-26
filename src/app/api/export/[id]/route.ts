@@ -29,8 +29,8 @@ export async function GET(req: NextRequest, { params }: { params: { id: string }
 
     const workspace = repairPlan.businessProfile.workspace;
     const isWhiteLabel = workspace.whiteLabelEnabled && workspace.customBrandName;
-    const brandName = isWhiteLabel ? workspace.customBrandName! : "Tasknator";
-    const brandDomain = isWhiteLabel && workspace.customDomain ? workspace.customDomain : "www.tasknator.com";
+    const brandName = isWhiteLabel ? workspace.customBrandName! : "Recovra.ai";
+    const brandDomain = isWhiteLabel && workspace.customDomain ? workspace.customDomain : "www.recovra.ai";
 
     if (format === "zip") {
       // Generate ZIP

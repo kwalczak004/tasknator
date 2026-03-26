@@ -19,7 +19,7 @@ async function getSmtpConfig() {
     secure: get("SMTP_SECURE") === "true",
     user: get("SMTP_USER"),
     pass: get("SMTP_PASS"),
-    from: get("EMAIL_FROM") || `${process.env.NEXT_PUBLIC_APP_NAME || "Tasknator"} <noreply@tasknator.com>`,
+    from: get("EMAIL_FROM") || `${process.env.NEXT_PUBLIC_APP_NAME || "Recovra.ai"} <noreply@recovra.ai>`,
   };
 }
 
@@ -70,7 +70,7 @@ export async function sendEmail(options: SendEmailOptions) {
 
 // ─── Shared layout ───────────────────────────────────────
 
-const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || "Tasknator";
+const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || "Recovra.ai";
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL!;
 
 function emailLayout(title: string, body: string) {

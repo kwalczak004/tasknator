@@ -41,9 +41,9 @@ function getBaseUrl(): string {
 }
 
 export const PAYPAL_PLANS: Record<string, { name: string; price: string; tier: string }> = {
-  STARTER: { name: "Tasknator Starter", price: "9.00", tier: "STARTER" },
-  PRO: { name: "Tasknator Pro", price: "29.00", tier: "PRO" },
-  AGENCY: { name: "Tasknator Agency", price: "79.00", tier: "AGENCY" },
+  STARTER: { name: "Recovra.ai Starter", price: "9.00", tier: "STARTER" },
+  PRO: { name: "Recovra.ai Pro", price: "29.00", tier: "PRO" },
+  AGENCY: { name: "Recovra.ai Agency", price: "79.00", tier: "AGENCY" },
 };
 
 export async function createPayPalOrder(planTier: string, workspaceId: string) {
@@ -71,7 +71,7 @@ export async function createPayPalOrder(planTier: string, workspaceId: string) {
         custom_id: JSON.stringify({ workspaceId, planTier }),
       }],
       application_context: {
-        brand_name: "Tasknator",
+        brand_name: "Recovra.ai",
         landing_page: "BILLING",
         user_action: "PAY_NOW",
         return_url: `${appUrl}/api/billing/paypal?action=capture`,

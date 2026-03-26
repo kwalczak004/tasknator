@@ -773,7 +773,7 @@ export default function AdminPage() {
               </div>
             )}
             {[
-              { key: "SITE_NAME", label: "Site Name", placeholder: "Tasknator" },
+              { key: "SITE_NAME", label: "Site Name", placeholder: "Recovra.ai" },
               { key: "SITE_LOGO_URL", label: "Logo URL", placeholder: "https://yourdomain.com/logo.png" },
               { key: "SITE_TAGLINE", label: "Tagline", placeholder: "AI that fixes business bottlenecks" },
             ].map(f => (
@@ -1124,7 +1124,7 @@ export default function AdminPage() {
               { key: "SMTP_SECURE", label: "Use TLS/SSL", placeholder: "true or false", type: "text" },
               { key: "SMTP_USER", label: "SMTP Username", placeholder: "postmaster@mg.yourdomain.com", type: "text" },
               { key: "SMTP_PASS", label: "SMTP Password", placeholder: "Your SMTP password", type: "password" },
-              { key: "EMAIL_FROM", label: "From Address", placeholder: "Tasknator <noreply@yourdomain.com>", type: "text" },
+              { key: "EMAIL_FROM", label: "From Address", placeholder: "Recovra.ai <noreply@yourdomain.com>", type: "text" },
             ].map(f => {
               const hasEnv = emailEnvStatus[f.key];
               const hasDb = !!emailConfig[f.key];

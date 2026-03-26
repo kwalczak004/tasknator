@@ -9,12 +9,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
         </div>
         <div className="relative">
           <div className="flex items-center gap-2 mb-2">
-            <div className="w-8 h-8 rounded-lg bg-white/20 backdrop-blur flex items-center justify-center">
-              <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
-            </div>
-            <span className="text-xl font-bold text-white">Tasknator</span>
+            <img src="/logo.png" alt="Recovra.ai" className="h-16 max-w-[220px] object-contain" />
           </div>
         </div>
         <div className="relative space-y-6">
@@ -36,7 +31,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
           </div>
         </div>
         <div className="relative text-sm text-indigo-200">
-          &copy; 2026 Tasknator. All rights reserved.
+          &copy; 2026 Recovra.ai. All rights reserved.
         </div>
       </div>
       {/* Right panel - form */}

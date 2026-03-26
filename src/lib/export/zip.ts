@@ -47,7 +47,7 @@ export async function generateExportZip(data: ExportData): Promise<Buffer> {
     }
 
     // Summary txt
-    const summary = `Tasknator Recovery Plan Export
+    const summary = `Recovra.ai Recovery Plan Export
 ==============================
 Business: ${data.businessName}
 Industry: ${data.industry}

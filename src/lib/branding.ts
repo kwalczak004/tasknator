@@ -31,14 +31,14 @@ export async function getSiteBranding(workspaceId?: string): Promise<SiteBrandin
     for (const c of configs) data[c.key] = c.value;
 
     return {
-      siteName: data["SITE_NAME"] || "Tasknator",
-      logoUrl: data["SITE_LOGO_URL"] || "",
+      siteName: data["SITE_NAME"] || "Recovra.ai",
+      logoUrl: data["SITE_LOGO_URL"] || "/logo1.png",
       tagline: data["SITE_TAGLINE"] || "AI that fixes business bottlenecks",
       whiteLabel: false,
     };
   } catch {
     return {
-      siteName: "Tasknator",
+      siteName: "Recovra.ai",
       logoUrl: "",
       tagline: "AI that fixes business bottlenecks",
       whiteLabel: false,

@@ -28,7 +28,7 @@ export function Sidebar() {
   const { data: session } = useSession();
   const [collapsed, setCollapsed] = useState(false);
   const isAdmin = (session?.user as any)?.isAdmin;
-  const [branding, setBranding] = useState({ siteName: "Tasknator", logoUrl: "", whiteLabel: false });
+  const [branding, setBranding] = useState({ siteName: "Recovra.ai", logoUrl: "/logo1.png", whiteLabel: false });
 
   useEffect(() => {
     fetch("/api/branding").then(r => r.json()).then(d => setBranding(d)).catch(() => {});
@@ -41,7 +41,7 @@ export function Sidebar() {
   );
 
   const Logo = () => branding.logoUrl ? (
-    <img src={branding.logoUrl} alt={branding.siteName} className="h-8 max-w-[140px] object-contain" />
+    <img src={branding.logoUrl} alt={branding.siteName} className="h-16 max-w-[220px] object-contain" />
   ) : (
     <DefaultLogo />
   );

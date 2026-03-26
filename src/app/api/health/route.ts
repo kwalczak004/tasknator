@@ -4,7 +4,7 @@ export async function GET() {
   return NextResponse.json({ 
     status: "ok", 
     timestamp: new Date().toISOString(),
-    service: "tasknator",
+    service: "recovra-ai",
     version: "1.0.0",
   });
 }

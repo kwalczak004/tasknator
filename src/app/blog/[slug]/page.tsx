@@ -9,7 +9,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   const post = await db.blogPost.findUnique({ where: { slug: params.slug } });
   if (!post) return { title: "Not Found" };
   return {
-    title: `${post.title} — Tasknator Blog`,
+    title: `${post.title} — Recovra.ai Blog`,
     description: post.excerpt,
   };
 }
@@ -32,7 +32,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
           <div className="flex items-center justify-between h-16">
             <Link href="/" className="flex items-center gap-2">
               {branding.logoUrl ? (
-                <img src={branding.logoUrl} alt={branding.siteName} className="h-8 max-w-[180px] object-contain" />
+                <img src={branding.logoUrl} alt={branding.siteName} className="h-16 max-w-[220px] object-contain" />
               ) : (
                 <>
                   <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-violet-600 flex items-center justify-center">
@@ -90,7 +90,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
           </div>
           <div>
             <div className="text-sm font-medium text-gray-900">{post.authorName}</div>
-            <div className="text-xs text-gray-500">Tasknator</div>
+            <div className="text-xs text-gray-500">Recovra.ai</div>
           </div>
         </div>
 
@@ -120,7 +120,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
               <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-600 to-violet-600 flex items-center justify-center">
                 <Zap className="w-4 h-4 text-white" />
               </div>
-              <span className="font-bold text-gray-900">Tasknator</span>
+              <span className="font-bold text-gray-900">Recovra.ai</span>
             </div>
             <div className="flex items-center gap-6 text-sm text-gray-500">
               <Link href="/blog" className="hover:text-gray-900 transition-colors">Blog</Link>

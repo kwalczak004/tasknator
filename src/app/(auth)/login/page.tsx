@@ -35,12 +35,7 @@ export default function LoginPage() {
     <div>
       <div className="mb-8">
         <div className="lg:hidden flex items-center gap-2 mb-6">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center">
-            <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-            </svg>
-          </div>
-          <span className="text-xl font-bold">Tasknator</span>
+          <img src="/logo.png" alt="Recovra.ai" className="h-16 max-w-[220px] object-contain" />
         </div>
         <h2 className="text-2xl font-bold text-slate-900">Welcome back</h2>
         <p className="text-slate-500 mt-1">Sign in to your account to continue</p>
