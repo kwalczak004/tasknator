@@ -116,12 +116,12 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
       {/* Footer */}
       <footer className="py-12 border-t border-gray-100 mt-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between">
             <div className="flex items-center gap-2">
               <img src="/logo.png" alt={branding.siteName} className="h-16 max-w-[220px] object-contain" />
               <span className="text-sm text-gray-400 ml-2">{branding.tagline}</span>
             </div>
-            <div className="flex items-center gap-6 text-sm text-gray-500">
+            <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm text-gray-500">
               {footerItems.map(item => (
                 <Link key={item.id} href={item.href} target={item.openNew ? "_blank" : undefined} className="hover:text-gray-900 transition-colors">
                   {item.label}
