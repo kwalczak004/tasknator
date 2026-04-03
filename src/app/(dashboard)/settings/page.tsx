@@ -191,7 +191,7 @@ export default function SettingsPage() {
                 Customize your platform with your own brand name, logo, and domain.
                 Your clients see your brand — not ours.
               </p>
-              <p className="text-amber-700 text-sm font-medium mt-3">Available on the Agency plan ($79/mo)</p>
+              <p className="text-amber-700 text-sm font-medium mt-3">Available on the Agency plan ($149/mo)</p>
               <a
                 href="/billing"
                 className="inline-flex items-center gap-2 mt-4 px-5 py-2.5 rounded-xl bg-amber-500 text-white text-sm font-medium hover:bg-amber-600 transition-colors"

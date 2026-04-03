@@ -6,7 +6,7 @@ import { getSiteBranding } from "@/lib/branding";
 const plans = [
   {
     name: "Starter",
-    price: 9,
+    price: 19,
     tier: "STARTER",
     description: "Perfect for solo businesses getting started with AI diagnostics",
     icon: Zap,
@@ -22,7 +22,7 @@ const plans = [
   },
   {
     name: "Pro",
-    price: 29,
+    price: 79,
     tier: "PRO",
     description: "For growing businesses that need the full diagnostic toolkit",
     icon: Crown,
@@ -39,7 +39,7 @@ const plans = [
   },
   {
     name: "Agency",
-    price: 79,
+    price: 149,
     tier: "AGENCY",
     description: "For agencies managing multiple client businesses",
     icon: Building2,
