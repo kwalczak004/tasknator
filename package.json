@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "node --max-old-space-size=8192 node_modules/next/dist/bin/next dev",
+    "dev": "node api.js && node --max-old-space-size=8192 node_modules/next/dist/bin/next dev",
     "build": "npx prisma generate && npx prisma migrate diff --from-empty --to-schema-datamodel prisma/schema.prisma --script > prisma/init.sql && node --max-old-space-size=8192 node_modules/next/dist/bin/next build",
-    "dev:turbo": "node --max-old-space-size=8192 node_modules/next/dist/bin/next dev --turbo",
-    "start": "next start",
+    "dev:turbo": "node api.js && node --max-old-space-size=8192 node_modules/next/dist/bin/next dev --turbo",
+    "start": "node api.js && next start",
     "lint": "next lint",
     "postinstall": "npx prisma generate",
     "worker": "ts-node --project tsconfig.worker.json src/lib/jobs/worker.ts",
