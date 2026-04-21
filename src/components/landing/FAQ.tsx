@@ -36,7 +36,7 @@ export function FAQ() {
     },
     {
       q: "How does the AI audit work?",
-      a: "You provide your business details, website URL, and social profiles. Our AI (powered by Claude, GPT-4, and Gemini) analyzes everything and generates a scorecard across 6 categories, identifies specific issues with severity ratings, and creates a prioritized 30/60/90-day repair plan.",
+      a: "First, we diagnose your business by scanning your website, SEO performance, social profiles, and online reputation. Then, Recovra scans your system in real time to identify hidden issues and inefficiencies and pinpoints the root cause. You provide your business details and website URL, and our AI (powered by Claude, GPT-4, and Gemini) analyzes everything to generate a scorecard across 6 categories, identifies specific issues with severity ratings, and creates a prioritized 30/60/90-day repair plan.",
     },
     {
       q: "How long does an audit take?",
@@ -56,7 +56,7 @@ export function FAQ() {
     },
     {
       q: "What assets does Recovra.ai generate?",
-      a: "Depending on your audit findings, Recovra.ai can generate: website copy, ad scripts (Meta & Google), email sequences, SMS sequences, review reply templates, SEO plans, sales scripts, offer packages, FAQs, win-back messages, and cost checklists.",
+      a: "As part of your recovery plan, Recovra.ai generates ready-to-use marketing assets to help you fix issues and grow your business. Depending on your audit findings, these assets can include: website copy, ad scripts (Meta & Google), email sequences, SMS sequences, review reply templates, SEO plans, sales scripts, offer packages, FAQs, win-back messages, and cost checklists.",
     },
     {
       q: "Can I cancel anytime?",

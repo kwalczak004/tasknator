@@ -8,6 +8,10 @@ export function HowItWorks() {
       className="border-t border-b border-slate-200/50 bg-[#fcfcfe] py-12 sm:py-16"
     >
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-12 text-center">
+          <h2 className="mb-3 text-3xl font-bold sm:text-4xl">Diagnose. Optimize. Recover. Instantly with AI</h2>
+          <p className="text-lg font-medium text-[#777c83]">Recovra helps businesses understand why they are underperforming and provides a structured recovery plan powered by AI. In seconds.</p>
+        </div>
         <div className="flex flex-col items-stretch gap-12 md:flex-row md:items-center md:justify-between md:gap-4 lg:gap-6">
           {[
             { n: "1", title: "Diagnose", desc: "Scan your systems" },

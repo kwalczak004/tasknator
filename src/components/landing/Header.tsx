@@ -19,21 +19,18 @@ export function LandingHeader({ branding }: LandingHeaderProps) {
               alt={branding.siteName}
               width={220}
               height={72}
-              className="h-14 w-auto max-w-[220px] object-contain"
+              className="h-20 w-auto max-w-[220px] object-contain"
             />
           ) : (
             <Image
-              src={branding.logoUrl || "/logo1.png"}
+              src={branding.logoUrl || "/recovra-logo.png"}
               alt={branding.siteName}
               width={220}
               height={72}
-              className="h-14 w-auto object-contain"
+              className="h-20 w-auto object-contain"
               priority
             />
           )}
-          <span className="text-2xl font-medium tracking-wide text-white">
-            {branding.siteName}
-          </span>
         </Link>
         <div className="flex items-center gap-16">
           <details className="relative md:hidden">
@@ -41,12 +38,6 @@ export function LandingHeader({ branding }: LandingHeaderProps) {
               Menu
             </summary>
             <div className="absolute right-0 top-full z-50 mt-2 min-w-[13rem] rounded-lg border border-slate-100 bg-white py-2 shadow-xl">
-              <a
-                href="#features"
-                className="block px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50"
-              >
-                Features
-              </a>
               <a
                 href="#how-it-works"
                 className="block px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50"
@@ -75,12 +66,6 @@ export function LandingHeader({ branding }: LandingHeaderProps) {
           </details>
 
           <div className="hidden items-center gap-8 md:flex">
-            <a
-              href="#features"
-              className="text-base font-normal text-white/90 transition-colors hover:text-white"
-            >
-              Features
-            </a>
             <a
               href="#how-it-works"
               className="text-base font-normal text-white/90 transition-colors hover:text-white"

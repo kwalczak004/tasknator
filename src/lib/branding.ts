@@ -32,7 +32,7 @@ export async function getSiteBranding(workspaceId?: string): Promise<SiteBrandin
 
     return {
       siteName: data["SITE_NAME"] || "Recovra.ai",
-      logoUrl: data["SITE_LOGO_URL"] || "/logo1.png",
+      logoUrl: data["SITE_LOGO_URL"] || "/recovra-logo.png",
       tagline: data["SITE_TAGLINE"] || "AI that fixes business bottlenecks",
       whiteLabel: false,
     };

@@ -16,7 +16,6 @@ import { LandingHeader } from "@/components/landing/Header";
 import { LandingHero } from "@/components/landing/Hero";
 import { TrustedBy } from "@/components/landing/TrustedBy";
 import { HowItWorks } from "@/components/landing/HowItWorks";
-import { Features } from "@/components/landing/Features";
 import { Pricing } from "@/components/landing/Pricing";
 import { FAQ } from "@/components/landing/FAQ";
 
@@ -57,7 +56,19 @@ export default async function HomePage() {
 
       <HowItWorks />
 
-      <Features branding={branding} />
+      <div className="bg-white py-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-center gap-3">
+            <AlertTriangle
+              className="h-5 w-5 shrink-0 text-amber-500"
+              strokeWidth={2}
+            />
+            <p className="text-center text-sm leading-relaxed text-slate-600">
+              AI-generated insights may vary and are for informational purposes only. Not professional advice.
+            </p>
+          </div>
+        </div>
+      </div>
 
       <Pricing />
 
@@ -68,11 +79,10 @@ export default async function HomePage() {
           <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between">
             <div className="flex flex-col items-center gap-1 md:flex-row md:items-center md:gap-2">
               {branding.logoUrl?.startsWith("http") ? (
-                <Image src={branding.logoUrl} alt={branding.siteName} width={220} height={72} className="h-16 w-auto max-w-[220px] object-contain" unoptimized />
+                <Image src={branding.logoUrl} alt={branding.siteName} width={220} height={72} className="h-20 w-auto max-w-[220px] object-contain" unoptimized />
               ) : (
-                <Image src={branding.logoUrl || "/logo1.png"} alt={branding.siteName} width={220} height={72} className="h-16 w-auto object-contain" />
+                <Image src={branding.logoUrl || "/recovra-logo.png"} alt={branding.siteName} width={220} height={72} className="h-20 w-auto object-contain" />
               )}
-              <span className="text-sm text-gray-400">{branding.siteName}</span>
             </div>
             <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm text-gray-500">
               {footerItems.map((item) => (
@@ -87,6 +97,9 @@ export default async function HomePage() {
                 </Link>
               ))}
             </div>
+          </div>
+          <div className="mt-8 flex justify-center border-t border-gray-100 pt-6 text-sm text-gray-500">
+            <p>Support: <a href="mailto:customersupport@recovra.ai" className="hover:text-gray-900 transition-colors">customersupport@recovra.ai</a></p>
           </div>
         </div>
       </footer>
